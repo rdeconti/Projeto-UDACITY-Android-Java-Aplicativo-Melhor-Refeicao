@@ -8,7 +8,7 @@ Projeto final desenvolvido no curso da Udacity para receber a certificação fin
 
 # Proposta
 
-<img align="center" alt="GIF" src="https://github.com/rdeconti/Projeto-UDACITY-Android-Java-Aplicativo-Culinaria/blob/main/bakehouse.png" />
+<img align="center" alt="GIF" src="https://github.com/rdeconti/Projeto-UDACITY-Android-Java-Aplicativo-Melhor-Refeicao/blob/main/BestMeal%20-%201.png" />
 <img align="center" alt="GIF" src="https://github.com/rdeconti/Projeto-UDACITY-Android-Java-Aplicativo-Culinaria/blob/main/bakehouse.png" />
 <img align="center" alt="GIF" src="https://github.com/rdeconti/Projeto-UDACITY-Android-Java-Aplicativo-Culinaria/blob/main/bakehouse.png" />
 <img align="center" alt="GIF" src="https://github.com/rdeconti/Projeto-UDACITY-Android-Java-Aplicativo-Culinaria/blob/main/bakehouse.png" />
