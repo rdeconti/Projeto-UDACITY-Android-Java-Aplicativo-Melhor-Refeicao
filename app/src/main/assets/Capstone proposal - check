@@ -1,0 +1,113 @@
+Capstone proposal review
+
+Splash screen: Done
+    Changes:
+        Adopted application bar with application name
+
+First Access and Login Screen: Done
+    Changes:
+        Adopted application bar with application name
+        Implemented complete Firebase Authorization: SignIn, Login, Logout, SignOut, Change email and Change and Reset password
+
+Navigation Drawer: Done
+    Changes:
+        Options moved to application bar: notification and purchase list
+        Options name changed to a short name
+        Options added: shared, visualized, and printed recipes
+
+Recipe of Day: Done
+    Important: contents get from Firebase RealTime Database (availability depends on network)
+    Changes:
+        Replaced by Recipe List BEST
+
+Recipe List - ALL: Done
+    Important: contents get from Firebase RealTime Database (availability depends on network)
+    Changes:
+        Included to each recipe from the list a collection of buttons
+        Included to each recipe from the list a collection of statistical numbers
+        Included the number of recipe after name of recipe
+        Included horizontal scrolling bar
+        Buttons search moved to application bar
+        Buttons classification and selection moved to settings
+
+Recipe List - LIKED: Done
+    Important: contents get from Sqlite (availability does not depend from network - local storage)
+    Changes:
+        Same from Recipe List ALL
+
+Recipe List - DISLIKED: Done
+    Important: contents get from Sqlite (availability does not depend from network - local storage)
+    Changes:
+        Same from Recipe List ALL
+
+Recipe List - APPROVALS: Done
+    Important: contents get from Sqlite (availability does not depend from network - local storage)
+    Changes:
+        Same from Recipe List ALL
+
+Recipe List - REPROVALS: Done
+    Important: contents get from Sqlite (availability does not depend from network - local storage)
+    Changes:
+        Same from Recipe List ALL
+
+Recipe List - BOOK: Done
+    Important: contents get from Sqlite (availability does not depend from network - local storage)
+    Changes:
+        Same from Recipe List ALL
+
+Recipe List - PURCHASE LIST: Done
+    Important: contents get from Sqlite (availability does not depend from network - local storage)
+    Changes:
+        Same from Recipe List ALL
+
+Menu Settings Options: Done
+    Changes:
+        Review of options (selection and notification it will be implemented in future version)
+
+Terms of use: Done
+    Changes:
+        Next task elaborate the real text to be implemented.
+
+About Us: Done
+    Changes:
+        Next task elaborate the real text to be implemented.
+
+Help: Done
+    Changes:
+        Next task elaborate the real text to be implemented.
+
+
+Best Meal Display Recipe – Header: Done
+
+Best Meal Display Recipe – Ingredients: Done
+
+Best Meal Display Recipe - Instructions: Done
+
+Best Meal Display Recipe – Quick View: Done like Nutritional
+
+Best Meal Display Recipe – Limit these: Done like Nutritional
+
+Best Meal Display Recipe – Get enough: Done like Nutritional
+
+Best Meal Display Recipe - Tips: Done
+
+Best Meal Display Recipe – Comments: Done
+
+Best Meal Display Recipe – Statistics: Done
+
+Best Meal Recipe – Floating action button options: Done -> Create header recipe
+
+General Changes
+    Recycler view designed with decoration line
+    Widget display number of items to be purchase instead of list of items
+    Buttons classification and selection moved to settings
+    Each fragment has different colours to identify better the information
+    Included to each recipe from the list a collection of buttons:
+        Approve recipe
+        Reprove recipe
+        Like recipe
+        Dislike recipe
+        Comment recipe
+        Print recipe
+        Share recipe
+

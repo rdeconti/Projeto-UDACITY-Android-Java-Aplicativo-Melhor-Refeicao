@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="application_settings_classification_option_labels">
+        <item>@string/settings_classification_label_newest</item>
+        <item>@string/settings_classification_label_liked</item>
+        <item>@string/settings_classification_label_disliked</item>
+        <item>@string/settings_classification_label_approved</item>
+        <item>@string/settings_classification_label_reproved</item>
+        <item>@string/settings_classification_label_shared</item>
+        <item>@string/settings_classification_label_printed</item>
+        <item>@string/settings_classification_label_visualized</item>
+    </array>
+
+    <array name="application_settings_classification_option_values">
+        <item>@string/settings_classification_value_newest</item>
+        <item>@string/settings_classification_value_liked</item>
+        <item>@string/settings_classification_value_disliked</item>
+        <item>@string/settings_classification_value_approved</item>
+        <item>@string/settings_classification_value_reproved</item>
+        <item>@string/settings_classification_value_shared</item>
+        <item>@string/settings_classification_value_printed</item>
+        <item>@string/settings_classification_value_visualized</item>
+    </array>
+
+    <array name="application_settings_servings_option_labels">
+        <item>@string/settings_servings_label_low</item>
+        <item>@string/settings_servings_label_medium</item>
+        <item>@string/settings_servings_label_high</item>
+        <item>@string/settings_servings_label_all</item>
+    </array>
+
+    <array name="application_settings_servings_option_values">
+        <item>@string/settings_servings_value_low</item>
+        <item>@string/settings_servings_value_medium</item>
+        <item>@string/settings_servings_value_high</item>
+        <item>@string/settings_servings_value_all</item>
+    </array>
+
+    <array name="application_settings_price_option_labels">
+        <item>@string/settings_price_label_low</item>
+        <item>@string/settings_price_label_medium</item>
+        <item>@string/settings_price_label_high</item>
+        <item>@string/settings_price_label_all</item>
+    </array>
+
+    <array name="application_settings_price_option_values">
+        <item>@string/settings_price_value_low</item>
+        <item>@string/settings_price_value_medium</item>
+        <item>@string/settings_price_value_high</item>
+        <item>@string/settings_price_value_all</item>
+    </array>
+
+    <array name="application_settings_time_option_labels">
+        <item>@string/settings_time_label_low</item>
+        <item>@string/settings_time_label_medium</item>
+        <item>@string/settings_time_label_high</item>
+        <item>@string/settings_time_label_all</item>
+    </array>
+
+    <array name="application_settings_time_option_values">
+        <item>@string/settings_time_value_low</item>
+        <item>@string/settings_time_value_medium</item>
+        <item>@string/settings_time_value_high</item>
+        <item>@string/settings_time_value_all</item>
+    </array>
+
+    <array name="application_settings_difficult_option_labels">
+        <item>@string/settings_difficult_label_low</item>
+        <item>@string/settings_difficult_label_medium</item>
+        <item>@string/settings_difficult_label_high</item>
+        <item>@string/settings_difficult_label_all</item>
+    </array>
+
+    <array name="application_settings_difficult_option_values">
+        <item>@string/settings_difficult_value_low</item>
+        <item>@string/settings_difficult_value_medium</item>
+        <item>@string/settings_difficult_value_high</item>
+        <item>@string/settings_difficult_value_all</item>
+    </array>
+
+    <array name="application_settings_language_option_labels">
+        <item>@string/settings_language_label_english</item>
+        <item>@string/settings_language_label_portuguese</item>
+        <item>@string/settings_language_label_spanish</item>
+    </array>
+
+    <array name="application_settings_language_option_values">
+        <item>@string/settings_language_value_english</item>
+        <item>@string/settings_language_value_portuguese</item>
+        <item>@string/settings_language_value_spanish</item>
+    </array>
+
+    <string-array name="YesNo">
+        <item>@string/label_recipe_status_yes</item>
+        <item>@string/label_recipe_status_no</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>@string/label_English</item>
+        <item>@string/label_Portuguese</item>
+        <item>@string/label_Spanish</item>
+    </string-array>
+
+    <string-array name="recipe_price_level">
+        <item>@string/label_Low</item>
+        <item>@string/label_High</item>
+        <item>@string/label_Medium</item>
+    </string-array>
+
+    <string-array name="recipe_difficult_level">
+        <item>@string/label_Low</item>
+        <item>@string/label_High</item>
+        <item>@string/label_Medium</item>
+    </string-array>
+
+    <string-array name="recipe_time_level">
+        <item>@string/label_Low</item>
+        <item>@string/label_High</item>
+        <item>@string/label_Medium</item>
+    </string-array>
+
+    <string-array name="recipe_serving_level">
+        <item>@string/label_Low</item>
+        <item>@string/label_High</item>
+        <item>@string/label_Medium</item>
+    </string-array>
+
+    <string-array name="recipe_type">
+        <item>@string/label_Other</item>
+        <item>@string/label_Salads</item>
+        <item>@string/label_Sides</item>
+        <item>@string/label_Mains</item>
+        <item>@string/label_Desserts</item>
+        <item>@string/label_Soups</item>
+        <item>@string/label_Breakfasts</item>
+    </string-array>
+
+    <string-array name="recipe_diet">
+        <item>@string/label_Other</item>
+        <item>@string/label_Low_Salt</item>
+        <item>@string/label_High_Protein</item>
+        <item>@string/label_Grain_free</item>
+        <item>@string/label_Vegan</item>
+    </string-array>
+
+    <string-array name="recipe_cuisine">
+        <item>@string/label_Other</item>
+        <item>@string/label_Portuguese</item>
+        <item>@string/label_Italian</item>
+        <item>@string/label_Mexican</item>
+        <item>@string/label_French</item>
+        <item>@string/label_Chinese</item>
+    </string-array>
+
+    <string-array name="recipe_intolerance">
+        <item>@string/label_Other</item>
+        <item>@string/label_Sugar</item>
+        <item>@string/label_Salt</item>
+        <item>@string/label_Gluten</item>
+        <item>@string/label_Milk</item>
+        <item>@string/label_Fish</item>
+    </string-array>
+
+    <string-array name="recipe_occasion">
+        <item>@string/label_Other</item>
+        <item>@string/label_Party</item>
+        <item>@string/label_Easter</item>
+        <item>@string/label_BBQ</item>
+        <item>@string/label_Halloween</item>
+        <item>@string/label_Buffet</item>
+    </string-array>
+
+</resources>

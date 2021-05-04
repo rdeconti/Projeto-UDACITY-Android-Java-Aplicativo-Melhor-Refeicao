@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    style="@style/best_meal_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_gradient_blue"
+    tools:context="com.rosemeire.deconti.bestmeal.ApplicationAuthorization.AuthorizationLogInActivity"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        style="@style/best_meal_app_bar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/best_meal_toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/best_meal_image_view_app_icon"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_description_app_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/best_meal_progress_bar_lists"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout_horizontal_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout" />
+
+    <EditText
+        android:id="@+id/editText_user_email"
+        style="@style/best_meal_edit_text_email"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/hint_email"
+        app:layout_constraintBottom_toTopOf="@+id/editText_user_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/editText_user_password"
+        style="@style/best_meal_edittext_password"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="104dp"
+        android:hint="@string/hint_password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_horizontal_buttons"
+        style="@style/best_meal_linear_layout_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_login"
+            style="@style/best_meal_button"
+            android:text="@string/label_login" />
+
+        <Button
+            android:id="@+id/button_reset"
+            style="@style/best_meal_button"
+            android:text="@string/label_reset" />
+
+        <Button
+            android:id="@+id/button_signin"
+            style="@style/best_meal_button"
+            android:text="@string/label_signIn" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

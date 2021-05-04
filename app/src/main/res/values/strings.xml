@@ -1,0 +1,412 @@
+<resources>
+
+    <!-- .............................................................................. App data -->
+    <string name="app_name" translatable="false">Best Meal</string>
+    <string name="app_goal">Personal MasterChef</string>
+
+    <!-- ............................................................................ AdMob data -->
+    <string name="admob_banner_ad_unit_number_key" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_app_number" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+
+    <!-- .................................................................. application settings -->
+    <string name="settings_classification_label_newest">by creation date</string>
+    <string name="settings_classification_label_liked">by likes</string>
+    <string name="settings_classification_label_disliked">by dislikes</string>
+    <string name="settings_classification_label_approved">by approvals</string>
+    <string name="settings_classification_label_reproved">by reprovals</string>
+    <string name="settings_classification_label_shared">by sharings</string>
+    <string name="settings_classification_label_printed">by printings</string>
+    <string name="settings_classification_label_visualized">by visualizations</string>
+
+    <string name="settings_classification_value_newest" translatable="false">creation_date</string>
+    <string name="settings_classification_value_liked" translatable="false">number_likes</string>
+    <string name="settings_classification_value_disliked" translatable="false">number_dislikes</string>
+    <string name="settings_classification_value_approved" translatable="false">number_approvals</string>
+    <string name="settings_classification_value_reproved" translatable="false">number_reprovals</string>
+    <string name="settings_classification_value_shared" translatable="false">number_sharings</string>
+    <string name="settings_classification_value_printed" translatable="false">number_printings</string>
+    <string name="settings_classification_value_visualized" translatable="false">number_visualizations</string>
+
+    <string name="settings_classification_key" translatable="false">classification</string>
+    <string name="settings_classification_label">Classification</string>
+
+    <string name="settings_servings_label_low">low</string>
+    <string name="settings_servings_label_medium">medium</string>
+    <string name="settings_servings_label_high">high</string>
+    <string name="settings_servings_label_all">all</string>
+
+    <string name="settings_servings_value_low" translatable="false">servings_low</string>
+    <string name="settings_servings_value_medium" translatable="false">servings_medium</string>
+    <string name="settings_servings_value_high" translatable="false">servings_high</string>
+    <string name="settings_servings_value_all" translatable="false">servings_all</string>
+
+    <string name="settings_servings_key" translatable="false">servings</string>
+    <string name="settings_servings_label">Servings</string>
+
+    <string name="settings_difficult_label_low">low</string>
+    <string name="settings_difficult_label_medium">medium</string>
+    <string name="settings_difficult_label_high">high</string>
+    <string name="settings_difficult_label_all">all</string>
+
+    <string name="settings_difficult_value_low" translatable="false">difficult_low</string>
+    <string name="settings_difficult_value_medium" translatable="false">difficult_medium</string>
+    <string name="settings_difficult_value_high" translatable="false">difficult_high</string>
+    <string name="settings_difficult_value_all" translatable="false">difficult_all</string>
+
+    <string name="settings_difficult_key" translatable="false">difficult</string>
+    <string name="settings_difficult_label">Difficult</string>
+
+    <string name="settings_price_label_low">low</string>
+    <string name="settings_price_label_medium">medium</string>
+    <string name="settings_price_label_high">high</string>
+    <string name="settings_price_label_all">all</string>
+
+    <string name="settings_price_value_low" translatable="false">price_low</string>
+    <string name="settings_price_value_medium" translatable="false">price_medium</string>
+    <string name="settings_price_value_high" translatable="false">price_high</string>
+    <string name="settings_price_value_all" translatable="false">price_all</string>
+
+    <string name="settings_price_key" translatable="false">price</string>
+    <string name="settings_price_label">Price</string>
+
+    <string name="settings_time_label_low">low</string>
+    <string name="settings_time_label_medium">medium</string>
+    <string name="settings_time_label_high">high</string>
+    <string name="settings_time_label_all">all</string>
+
+    <string name="settings_time_value_low" translatable="false">time_low</string>
+    <string name="settings_time_value_medium" translatable="false">time_medium</string>
+    <string name="settings_time_value_high" translatable="false">time_high</string>
+    <string name="settings_time_value_all" translatable="false">time_all</string>
+
+    <string name="settings_time_key" translatable="false">time</string>
+    <string name="settings_time_label">Time</string>
+
+    <string name="settings_language_label_english">english</string>
+    <string name="settings_language_label_portuguese">portuguese</string>
+    <string name="settings_language_label_spanish">spanish</string>
+
+    <string name="settings_language_value_english" translatable="false">English</string>
+    <string name="settings_language_value_portuguese" translatable="false">Portuguese</string>
+    <string name="settings_language_value_spanish" translatable="false">Spanish</string>
+
+    <string name="settings_language_key" translatable="false">language</string>
+    <string name="settings_language_label">Language</string>
+
+    <string name="settings_purchase_items_key" translatable="false">purchase_items</string>
+    <string name="settings_purchase_items_label" translatable="false">purchase items</string>
+
+    <!-- ................................................................................. Hints -->
+    <string name="hint_email">Enter your email address</string>
+    <string name="hint_old_email">Enter your old email</string>
+    <string name="hint_new_email">Enter your new email</string>
+    <string name="hint_password">Enter your password code</string>
+    <string name="hint_old_password">Enter your old password</string>
+    <string name="hint_new_password">Enter your new password</string>
+    <string name="hint_enter_name_of_recipe">Enter name of recipe</string>
+    <string name="hint_enter_ingredient_name">Enter ingredient name</string>
+    <string name="hint_enter_ingredient_amount">Enter ingredient amount</string>
+    <string name="hint_enter_ingredient_unit">Enter ingredient unit</string>
+
+    <!-- .................................................................. Content Descriptions -->
+    <string name="content_description_app_icon" translatable="false">app icon</string>
+    <string name="content_description_app_name" translatable="false">app name</string>
+    <string name="content_description_app_message" translatable="false">app message</string>
+    <string name="content_description_app_task" translatable="false">app task</string>
+    <string name="content_description_button_dislike" translatable="false">button dislike</string>
+    <string name="content_description_button_like" translatable="false">button like</string>
+    <string name="content_description_button_approve" translatable="false">button approve</string>
+    <string name="content_description_button_delete" translatable="false">button delete</string>
+    <string name="content_description_button_reprove" translatable="false">button reprove</string>
+    <string name="content_description_button_share" translatable="false">button share</string>
+    <string name="content_description_button_print" translatable="false">button print</string>
+    <string name="content_description_button_edit" translatable="false">button edit</string>
+    <string name="content_description_button_comment" translatable="false">button comment</string>
+    <string name="content_description_recipe_time_icon" translatable="false">recipe time icon</string>
+    <string name="content_description_purchase_list_icon" translatable="false">purchase list icon</string>
+    <string name="content_description_recipe_servings_icon" translatable="false">recipe servings icon</string>
+    <string name="content_description_recipe_price_icon" translatable="false">recipe price icon</string>
+    <string name="content_description_recipe_difficult_icon" translatable="false">recipe difficult icon</string>
+    <string name="content_description_recipe_photo" translatable="false">recipe photo</string>
+    <string name="content_description_ingredient_amount" translatable="false">ingredient amount</string>
+    <string name="content_description_ingredient_unit" translatable="false">ingredient unit</string>
+    <string name="content_description_ingredient_photo" translatable="false">ingredient photo</string>
+    <string name="content_description_hands_off" translatable="false">hands off</string>
+    <string name="content_description_test" translatable="false">button visibility</string>
+
+    <!-- .................................. .................................... Labels - widget -->
+    <string name="label_widget_launch_best_meal">Launch Best Meal</string>
+    <string name="label_widget_purchase" translatable="false">%1$s</string>
+
+    <!-- ................................................................................. Label -->
+    <string name="label_comments">Comments</string>
+    <string name="label_header">Header</string>
+    <string name="label_ingredients">Ingredients</string>
+    <string name="label_instructions">Instructions</string>
+    <string name="label_nutritional">Nutritional</string>
+    <string name="label_tips">Tips</string>
+    <string name="label_statistics">Statistics</string>
+    <string name="label_widget_items_purchase">Items to be purchased</string>
+    <string name="label_widget_create">Create widget"</string>
+    <string name="label_widget_configuration">Widget configurations"</string>
+    <string name="label_authorization">Authorization</string>
+    <string name="label_terms_of_use">Terms of use</string>
+    <string name="label_about_us">About us</string>
+    <string name="label_help">Help</string>
+    <string name="label_login">LogIn</string>
+    <string name="label_logout">LogOut</string>
+    <string name="label_signIn">SigIn</string>
+    <string name="label_signOut">SignOut</string>
+    <string name="label_changePassword">Change Password</string>
+    <string name="label_changeEmail">Change Email</string>
+    <string name="label_settings">Settings</string>
+    <string name="label_information">Information</string>
+    <string name="label_user_agreement">"User agreement"</string>
+    <string name="label_user_warning" translatable="false">"User warning"</string>
+    <string name="label_best">Best</string>
+    <string name="label_all">All</string>
+    <string name="label_visualized">Visualized</string>
+    <string name="label_printed">Printed</string>
+    <string name="label_commented">Commented</string>
+    <string name="label_shared">Shared</string>
+    <string name="label_change">Change</string>
+    <string name="label_home">Home</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_reset">Reset</string>
+    <string name="label_refuse">Refuse</string>
+    <string name="label_accept">Accept</string>
+    <string name="label_created_on">Created on</string>
+    <string name="label_diet">Diet</string>
+    <string name="label_type">Type</string>
+    <string name="label_cuisine">Cuisine</string>
+    <string name="label_intolerance">Intolerance</string>
+    <string name="label_occasion">Occasion</string>
+    <string name="label_best_meal_error">BestMeal Error</string>
+    <string name="label_menu">menu</string>
+    <string name="label_list">List</string>
+    <string name="label_detail">Detail</string>
+    <string name="label_quantity">Quantity</string>
+    <string name="label_recipe">Recipe</string>
+    <string name="label_author">Author</string>
+    <string name="label_status">Status</string>
+    <string name="label_number">Number</string>
+    <string name="label_photo">Photo</string>
+    <string name="label_name">Name</string>
+    <string name="label_time">Time</string>
+    <string name="label_servings">Servings</string>
+    <string name="label_price">Price</string>
+    <string name="label_difficult">Difficult</string>
+    <string name="label_continue">Continue</string>
+    <string name="label_stop">Stop</string>
+    <string name="label_English">English</string>
+    <string name="label_Portuguese">Portuguese</string>
+    <string name="label_Spanish">Spanish</string>
+    <string name="label_High">High</string>
+    <string name="label_Medium">Medium</string>
+    <string name="label_Low">Low</string>
+    <string name="label_approved">Approved</string>
+    <string name="label_reproved">Reproved</string>
+    <string name="label_liked">Liked</string>
+    <string name="label_disliked">Disliked</string>
+    <string name="label_book">Book</string>
+    <string name="label_published">Published</string>
+    <string name="label_purchase">Purchases</string>
+    <string name="label_print">Print</string>
+    <string name="label_share">Share</string>
+    <string name="label_comment">Comment</string>
+    <string name="label_like">Like</string>
+    <string name="label_dislike">Dislike</string>
+    <string name="label_approve">Approve</string>
+    <string name="label_reprove">Reprove</string>
+    <string name="label_share_through">Share via</string>
+    <string name="label_share_title">Best Meal Share Recipe</string>
+    <string name="label_share_contents">Recipe from Best Meal: Download APP free from Google Store</string>
+    <string name="label_share_type" translatable="false">text/plain</string>
+    <string name="label_calcium">Calcium</string>
+    <string name="label_carbs">Carbs</string>
+    <string name="label_cholesterol">Cholesterol</string>
+    <string name="label_monounsaturated">Monounsaturated</string>
+    <string name="label_polyunsaturated">Polyunsaturated</string>
+    <string name="label_saturated">Saturated</string>
+    <string name="label_fat">Fat</string>
+    <string name="label_trans">Trans</string>
+    <string name="label_iron">Iron</string>
+    <string name="label_fiber">Fiber</string>
+    <string name="label_folate">Folate</string>
+    <string name="label_potassium">Potassium</string>
+    <string name="label_magnesium">Magnesium</string>
+    <string name="label_sodium">Sodium</string>
+    <string name="label_energy">Energy</string>
+    <string name="label_niacin">Niacin</string>
+    <string name="label_phosphorus">Phosphorus</string>
+    <string name="label_protein">Protein</string>
+    <string name="label_riboflavin">Riboflavin</string>
+    <string name="label_sugars">Sugars</string>
+    <string name="label_thiamin">Thiamin</string>
+    <string name="label_vitamin_e">Vitamin E</string>
+    <string name="label_vitamin_a">Vitamin A</string>
+    <string name="label_vitamin_b12">Vitamin B12</string>
+    <string name="label_vitamin_b6">Vitamin B6</string>
+    <string name="label_vitamin_c">Vitamin C</string>
+    <string name="label_vitamin_d">Vitamin D</string>
+    <string name="label_vitamin_k">Vitamin K</string>
+    <string name="label_classification">Classification</string>
+    <string name="label_selection">Selection</string>
+    <string name="label_notification">Notification</string>
+    <string name="label_signout">SignOut</string>
+    <string name="label_change_email">Change Email</string>
+    <string name="label_change_password">Change Password</string>
+    <string name="label_contact_us">Contact us</string>
+    <string name="label_talker">Talker</string>
+    <string name="label_delete">Delete</string>
+    <string name="label_insert">Insert</string>
+    <string name="label_choose">Choose</string>
+    <string name="label_load">Load</string>
+    <string name="label_maintenance">Maintenance</string>
+    <string name="label_enter_text">Enter your text here</string>
+    <string name="label_Other">Other</string>
+    <string name="label_Salads">Salads</string>
+    <string name="label_Sides">Sides</string>
+    <string name="label_Mains">Mains</string>
+    <string name="label_Desserts">Desserts</string>
+    <string name="label_Soups">Soups</string>
+    <string name="label_Breakfasts">Breakfasts</string>
+    <string name="label_Low_Salt">Salt</string>
+    <string name="label_High_Protein">Protein</string>
+    <string name="label_Grain_free" translatable="false">Grain free</string>
+    <string name="label_Vegan">Vegan</string>
+    <string name="label_Italian">Italian</string>
+    <string name="label_Mexican">Mexican</string>
+    <string name="label_French">French</string>
+    <string name="label_Chinese">Chinese</string>
+    <string name="label_Sugar">Sugar</string>
+    <string name="label_Salt">Salt</string>
+    <string name="label_Gluten">Gluten</string>
+    <string name="label_Milk">Milk</string>
+    <string name="label_Fish">Fish</string>
+    <string name="label_Party">Party</string>
+    <string name="label_Easter">Easter</string>
+    <string name="label_BBQ">BBQ</string>
+    <string name="label_Halloween">Halloween</string>
+    <string name="label_Buffet">Buffet</string>
+    <string name="label_print_pdf" translatable="false">.pdf</string>
+    <string name="label_widget">Best Meal - Purchases</string>
+    <string name="label_print_recipe">Print Recipe</string>
+
+    <!-- ................................................................... Label Recipe Status -->
+    <string name="label_recipe_status_yes" translatable="false" >Yes</string>
+    <string name="label_recipe_status_no" translatable="false" >No</string>
+
+    <!-- ..................................................................... Label Load Images -->
+    <string name="label_load_image_uploaded">Uploaded</string>
+    <string name="label_load_image_uploading">Uploading</string>
+    <string name="label_load_image_title">Select Picture</string>
+    <string name="label_underscore" translatable="false">_</string>
+    <string name="label_load_image_percent" translatable="false">%</string>
+    <string name="label_load_image_directory" translatable="false">image/*</string>
+
+    <!-- ........................................................................ Label firebase -->
+    <string name="label_userFirebaseId" translatable="false">"User Firebase Id"</string>
+    <string name="label_UserFirebaseEmail" translatable="false">"User Firebase Email"</string>
+    <string name="label_not_available" translatable="false">Not available</string>
+
+    <!-- ........................................................................ Error Messages -->
+    <string name="message_advice_are_you_sure_delete">Are you sure you want to delete this entry?</string>
+    <string name="message_advice_are_you_you_sure_reset">Are you sure you want to reset app to initial data?</string>
+
+    <string name="message_error_date_time">Error date/time:</string>
+    <string name="message_error_activity">Error activity:</string>
+    <string name="message_error_code">Error code:</string>
+    <string name="message_error_details">Error details:</string>
+    <string name="message_error_error">Error message:</string>
+    <string name="message_error_cause">Error cause:</string>
+    <string name="message_error_class">Error class:</string>
+    <string name="message_error_message">Error message:</string>
+    <string name="message_error_unexpected_problem">We had an unexpected problem. Try again later!</string>
+    <string name="message_password_short">Password with minimum 6 characters</string>
+    <string name="message_user_reset_success">Reset password was done! Email was sent with instructions!</string>
+    <string name="message_user_reset_failed">Reset password NOT done! Please, contact us!</string>
+    <string name="message_user_signIn_success">Account created!</string>
+    <string name="message_user_signIn_failed">SignIn NOT done! Please, contact us!</string>
+    <string name="message_user_logIn_failed">LogIn NOT done! Please, contact us!</string>
+    <string name="message_user_logout_success">logout was done!</string>
+    <string name="message_user_signOut_success">SignOut was done!</string>
+    <string name="message_user_signOut_failed">SignOut NOT done! Please, contact us!</string>
+    <string name="message_user_changeEmail_success">Email changed!</string>
+    <string name="message_user_changeEmail_failed">Email NOT changed! Please, contact us!</string>
+    <string name="message_user_changeEmail_different">Emails must be different!</string>
+    <string name="message_user_changeEmail_old_empty">Enter your old email!</string>
+    <string name="message_user_changeEmail_new_empty">Enter your new email!</string>
+    <string name="message_user_changePassword_success">Password changed!</string>
+    <string name="message_user_changePassword_failed">Password NOT changed! Please, contact us!</string>
+    <string name="message_user_changePassword_different">Passwords must be different!</string>
+    <string name="message_user_changePassword_old_empty">Enter your old password!</string>
+    <string name="message_user_changePassword_new_empty">Enter your new password!</string>
+    <string name="message_user_email">Enter your email address</string>
+    <string name="message_user_email_invalid">This e-mail is not valid</string>
+    <string name="message_user_password">Enter your password code</string>
+    <string name="message_user_please_login">Please LogIn!</string>
+    <string name="message_user_information_required">This information is required!</string>
+    <string name="message_user_insert">Insert done with success!</string>
+    <string name="message_user_change">Change done with success!</string>
+    <string name="message_user_delete">Delete done with success!</string>
+    <string name="message_user_list_empty">This list is empty!</string>
+    <string name="message_user_image_loaded">Image loaded with success!</string>
+    <string name="message_user_image_not_loaded">Image was not loaded! Try again later!</string>
+    <string name="message_network_not_available">Network is not available. Please try again later!</string>
+    <string name="message_recipe_not_yours">This recipe belongs to other user! Maintain your recipes!</string>
+    <string name="message_talker_error_01">Talker language is not supported</string>
+    <string name="message_talker_error_02">Talker initialization Failed</string>
+    <string name="message_user_tips_empty">Inform your tips</string>
+    <string name="message_user_instructions_empty">Inform your instructions</string>
+
+    <string name="message_error_001" translatable="false">must implement OnListFragmentInteractionListener</string>
+    <string name="message_error_002" translatable="false">Replace with your own action</string>
+    <string name="message_error_003" translatable="false">must implement OnListFragmentInteractionListener</string>
+    <string name="simple_data_format" translatable="false">yyyyMMdd_HHmmss</string>
+
+    <!-- .............................................................................. Messages -->
+    <string name="message_TermsAndConditions">
+        Terms and conditions - It is very important that you read and accept our terms and conditions of use. Please check it!
+    </string>
+
+    <string name="message_NetworkNotAvailableLogin">"Network is not available, but, you can check recipes in local lists! Try network lists again later!     "</string>
+
+    <string name="message_NetworkNotAvailableList">"Network is not available and this list can not be updated, but, you can check recipes in local lists! Try network lists again later!     "</string>
+
+    <!-- -............................................................. App Terms and Conditions -->
+    <string name="app_TermsAndConditions">"         This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.         This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.         This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.         This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.         This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.     "</string>
+
+    <!-- -......................................................................... App About us -->
+    <string name="app_AboutUs">
+        This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.
+        This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.
+        This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.
+        This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.
+        This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.
+    </string>
+
+    <!-- -............................................................................. App Help -->
+    <string name="app_Help">
+        This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.
+        This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.
+        This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.
+        This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.
+        This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone. This text must be redone.
+    </string>
+
+    <!-- ............................................................................... General -->
+    <string name="termsAndConditions">By clicking SignUp you agree all the Terms and Conditions</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="label_wifi" translatable="false">\?wifi</string>
+    <string name="layout_fake_value_10" translatable="false">12345</string>
+    <string name="print_document" translatable="false">Document</string>
+    <string name="print_page_count_is_zero" translatable="false">Page count is zero.</string>
+    <string name="print_check" translatable="false">This is some test content to verify that custom document printing works</string>
+    <string name="widget_items_to_be_purchased">Items to be purchased</string>
+    <string name="title_home">Main</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="print_file" translatable="false">BestMeal.pdf</string>
+
+</resources>

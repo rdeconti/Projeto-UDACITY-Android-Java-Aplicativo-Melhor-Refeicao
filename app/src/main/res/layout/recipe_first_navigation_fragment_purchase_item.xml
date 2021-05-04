@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView_recipe_name"
+        style="@style/best_meal_title_recipe_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_recipe"
+        app:layout_constraintBottom_toTopOf="@+id/textView_IngredientName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/textView_RecipeNumber"
+        style="@style/best_meal_textview_recipe_number"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/layout_fake_value_10"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_IngredientAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_IngredientName" />
+
+    <TextView
+        android:id="@+id/textView_IngredientName"
+        style="@style/best_meal_title_recipe_name"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/label_ingredients"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_recipe_name" />
+
+    <TextView
+        android:id="@+id/textView_IngredientNumber"
+        style="@style/best_meal_text_view_ingredient_number"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/layout_fake_value_10"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/divider12"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_IngredientUnit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_RecipeNumber" />
+
+    <ImageView
+        android:id="@+id/imageView_IngredientAmount"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_description_ingredient_amount"
+        app:layout_constraintEnd_toStartOf="@+id/textView_IngredientAmount"
+        app:layout_constraintTop_toBottomOf="@+id/textView_IngredientName"
+        app:srcCompat="@drawable/ic_recipe_amount_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView_IngredientAmount"
+        android:layout_width="250dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/layout_fake_value_10"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_delete"
+        app:layout_constraintTop_toBottomOf="@+id/textView_IngredientName" />
+
+    <ImageView
+        android:id="@+id/imageView_IngredientUnit"
+        android:layout_width="30dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/content_description_ingredient_unit"
+        app:layout_constraintBottom_toTopOf="@+id/divider12"
+        app:layout_constraintEnd_toStartOf="@+id/textView_IngredientUnit"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_IngredientAmount"
+        app:srcCompat="@drawable/ic_recipe_unit_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView_IngredientUnit"
+        android:layout_width="250dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/layout_fake_value_10"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/divider12"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_delete"
+        app:layout_constraintTop_toBottomOf="@+id/textView_IngredientAmount" />
+
+    <ImageButton
+        android:id="@+id/imageButton_delete"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/content_description_button_delete"
+        app:layout_constraintBottom_toTopOf="@+id/divider12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_IngredientName"
+        app:srcCompat="@drawable/ic_purchase_delete_white_24dp" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_IngredientUnit" />
+
+</android.support.constraint.ConstraintLayout>

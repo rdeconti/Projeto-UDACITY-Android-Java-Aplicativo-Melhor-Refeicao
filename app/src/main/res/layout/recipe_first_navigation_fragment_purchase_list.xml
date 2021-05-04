@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:longClickable="true"
+    app:layoutManager="LinearLayoutManager"
+    tools:context="com.rosemeire.deconti.bestmeal.RecipeFirstNavigation.RecipeFirstNavigationCaptainActivity"
+    tools:listitem="@layout/recipe_first_navigation_fragment_purchase_item">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutVertical"
+        style="@style/best_meal_linear_layout_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recipePurchaseModels"
+        android:name="com.rosemeire.deconti.bestmeal.recipe_purchase_list_fragment"
+        style="@style/best_meal_first_navigation_recycler_view"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutVertical"
+        tools:context="com.rosemeire.deconti.bestmeal.RecipeFirstNavigation.RecipeFirstNavigationCaptainActivity"
+        tools:listitem="@layout/recipe_first_navigation_fragment_purchase_item">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/best_meal_progress_bar_lists"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recipePurchaseModels" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAdMob"
+        style="@style/best_meal_first_navigation_admob"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:adSize="BANNER"
+            app:adUnitId="@string/admob_banner_ad_unit_number_key" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rosemeire.deconti.bestmeal">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BATTERY_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="ACCESS_WIFI_STATE" />
+    <uses-permission android:name="CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".ApplicationSplash.ApplicationSplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecipeFirstNavigation.RecipeFirstNavigationCaptainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".RecipeSecondNavigation.RecipeSecondNavigationCaptainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ApplicationTexts.ApplicationTextTermsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ApplicationTexts.ApplicationTextAboutUsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ApplicationTexts.ApplicationTextHelpActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".RecipeTool.RecipeToolTalkerActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ApplicationAuthorization.AuthorizationChangeEmailActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ApplicationAuthorization.AuthorizationChangePasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ApplicationAuthorization.AuthorizationLogOutActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ApplicationAuthorization.AuthorizationResetActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ApplicationAuthorization.AuthorizationSignInActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ApplicationAuthorization.AuthorizationSignOutActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ApplicationAuthorization.AuthorizationLogInActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".RecipeTool.RecipeToolPrintActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ApplicationSettings.ApplicationSettingActivity"
+            android:label="@string/label_settings"
+            android:parentActivityName=".RecipeFirstNavigation.RecipeFirstNavigationCaptainActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".RecipeTool.RecipeToolMaintenanceTipsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".RecipeTool.RecipeToolMaintenanceNutritionalActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".RecipeTool.RecipeToolMaintenanceInstructionsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".RecipeTool.RecipeToolMaintenanceIngredientsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".RecipeTool.RecipeToolMaintenanceHeaderActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".RecipeTool.RecipeToolMaintenanceCommentsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <receiver
+            android:name=".RecipeWidgetPurchaseList.RecipeWidgetAppWidgetProvider"
+            android:label="@string/label_widget"
+            tools:ignore="InnerclassSeparator">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.rosemeire.deconti.bestmeal.app.ACTION_DATA_UPDATED" />
+            </intent-filter>
+
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/recipe_widget_collection_widget" />
+        </receiver>
+
+        <provider
+            android:authorities="com.rosemeire.deconti.bestmeal"
+            android:name="com.rosemeire.deconti.bestmeal.RecipeWidgetPurchaseList.RecipeWidgetContentProvider"
+            android:exported="false"
+            tools:ignore="InnerclassSeparator" />
+
+        <service
+            android:name=".RecipeWidgetPurchaseList.RecipeWidgetRemoteViewsService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            tools:ignore="InnerclassSeparator" />
+
+    </application>
+
+</manifest>

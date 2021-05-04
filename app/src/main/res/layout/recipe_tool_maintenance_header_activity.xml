@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    style="@style/best_meal_constraint_layout"
+    android:background="@drawable/screen_gradient_blue"
+    tools:context=".RecipeTool.RecipeToolMaintenanceHeaderActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        style="@style/best_meal_app_bar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/best_meal_toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:id="@+id/divider_horizontal_1"
+        android:layout_width="395dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_recipePhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <ImageView
+        android:id="@+id/imageView_recipePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="@string/content_description_app_task"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_recipe_photo"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/divider_horizontal_2"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_recipePhoto"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_insert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTitle_RecipeName"
+                style="@style/best_meal_title_short_edit"
+                android:text="@string/label_name" />
+
+            <EditText
+                android:id="@+id/textViewValue_RecipeName"
+                style="@style/best_meal_value_long_edit"
+                android:hint="@string/hint_enter_name_of_recipe"
+                android:importantForAutofill="no"
+                android:inputType="text|textCapWords"
+                tools:ignore="LabelFor,UnusedAttribute" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTitle_Diet"
+                style="@style/best_meal_title_short_edit"
+                android:text="@string/label_diet" />
+
+            <Spinner
+                android:id="@+id/spinner_diet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/recipe_diet"
+                android:prompt="@string/label_Other"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTitle_Type"
+                style="@style/best_meal_title_short_edit"
+                android:text="@string/label_type" />
+
+            <Spinner
+                android:id="@+id/spinner_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/recipe_type"
+                android:prompt="@string/label_Other"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTitle_Cuisine"
+                style="@style/best_meal_title_short_edit"
+                android:text="@string/label_cuisine" />
+
+            <Spinner
+                android:id="@+id/spinner_cuisine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/recipe_cuisine"
+                android:prompt="@string/label_Other"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTitle_Intolerance"
+                style="@style/best_meal_title_short_edit"
+                android:text="@string/label_intolerance" />
+
+            <Spinner
+                android:id="@+id/spinner_intolerance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/recipe_intolerance"
+                android:prompt="@string/label_Other"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTitle_Occasion"
+                style="@style/best_meal_title_short_edit"
+                android:text="@string/label_occasion" />
+
+            <Spinner
+                android:id="@+id/spinner_occasion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/recipe_occasion"
+                android:prompt="@string/label_Other"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTitle_Servings"
+                style="@style/best_meal_title_short_edit"
+                android:text="@string/label_servings" />
+
+            <Spinner
+                android:id="@+id/spinner_servings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/recipe_serving_level"
+                android:prompt="@string/label_Other"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTitle_Price"
+                style="@style/best_meal_title_short_edit"
+                android:text="@string/label_price" />
+
+            <Spinner
+                android:id="@+id/spinner_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/recipe_price_level"
+                android:prompt="@string/label_Other"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTitle_Time"
+                style="@style/best_meal_title_short_edit"
+                android:text="@string/label_time" />
+
+            <Spinner
+                android:id="@+id/spinner_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/recipe_time_level"
+                android:prompt="@string/label_Other"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTitle_DifficultLevel"
+                style="@style/best_meal_title_short_edit"
+                android:text="@string/label_difficult" />
+
+            <Spinner
+                android:id="@+id/spinner_difficult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/recipe_difficult_level"
+                android:prompt="@string/label_Other"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/best_meal_progress_bar_lists"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/imageButton_choose"
+        style="@style/best_meal_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_choose"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_recipePhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/imageButton_load"
+        style="@style/best_meal_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_load"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_recipePhoto"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_recipePhoto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_choose"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/imageButton_change"
+        style="@style/best_meal_button"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/imageButton_delete"
+        style="@style/best_meal_button"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/imageButton_insert"
+        style="@style/best_meal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_insert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_change"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_delete" />
+
+</android.support.constraint.ConstraintLayout>

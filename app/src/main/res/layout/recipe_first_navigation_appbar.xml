@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeFirstNavigation.RecipeFirstNavigationCaptainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        style="@style/best_meal_floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorAccent"
+        app:srcCompat="@drawable/ic_button_add_white_24dp" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/best_meal_toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            style="@style/best_meal_tab_layout"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#FFFFFF"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabTextColor="#FFFFFF">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeListBest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_best_white_24dp"
+                android:text="@string/label_best" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeListAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_all_white_24dp"
+                android:text="@string/label_all" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeListLiked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_like_white_24dp"
+                android:text="@string/label_liked" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeListDisliked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_dislike_white_24dp"
+                android:text="@string/label_disliked" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeListApproved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_approved_white_24dp"
+                android:text="@string/label_approved" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeListReproved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_reproved_white_24dp"
+                android:text="@string/label_reproved" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeListBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_book_white_24dp"
+                android:text="@string/label_book" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeListShared"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_share_white_24dp"
+                android:text="@string/label_shared" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeListPrinted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_print_white_24dp"
+                android:text="@string/label_printed" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeListVisualized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_visibility_white_24dp"
+                android:text="@string/label_visualized" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeListPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_purchase_list_white_24dp"
+                android:text="@string/label_purchase" />
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/recipe_first_navigation_content" />
+
+</android.support.design.widget.CoordinatorLayout>

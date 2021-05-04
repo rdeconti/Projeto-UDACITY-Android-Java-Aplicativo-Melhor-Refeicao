@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/recipe_detail_header"
+            android:icon="@drawable/ic_recipe_header_white_24dp"
+            android:title="@string/label_header" />
+        <item
+            android:id="@+id/recipe_detail_ingredients"
+            android:icon="@drawable/ic_recipe_ingredients_white_24dp"
+            android:title="@string/label_ingredients" />
+        <item
+            android:id="@+id/recipe_detail_instructions"
+            android:icon="@drawable/ic_recipe_instructions_white_24dp"
+            android:title="@string/label_instructions" />
+        <item
+            android:id="@+id/recipe_detail_nutrition"
+            android:icon="@drawable/ic_recipe_nutritional_white_24dp"
+            android:title="@string/label_nutritional" />
+
+        <item
+            android:id="@+id/recipe_detail_tips"
+            android:icon="@drawable/ic_recipe_tips_white_24dp"
+            android:title="@string/label_tips" />
+
+        <item
+            android:id="@+id/recipe_detail_comments"
+            android:icon="@drawable/ic_recipe_comment_white_24dp"
+            android:title="@string/label_comments" />
+
+        <item
+            android:id="@+id/recipe_detail_statistics"
+            android:icon="@drawable/ic_recipe_statistics_white_24dp"
+            android:title="@string/label_statistics" />
+
+    </group>
+
+</menu>

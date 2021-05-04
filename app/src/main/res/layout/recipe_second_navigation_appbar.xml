@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeSecondNavigation.RecipeSecondNavigationCaptainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/best_meal_toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            style="@style/best_meal_tab_layout"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#FFFFFF"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabTextColor="#FFFFFF">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeDetailHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_header_white_24dp"
+                android:text="@string/label_header" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeDetailIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_ingredients_white_24dp"
+                android:text="@string/label_ingredients" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeDetailInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_instructions_white_24dp"
+                android:text="@string/label_instructions" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeDetailNutritional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_nutritional_white_24dp"
+                android:text="@string/label_nutritional" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeDetailTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_tips_white_24dp"
+                android:text="@string/label_tips" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeDetailComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_comment_white_24dp"
+                android:text="@string/label_comments" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemRecipeDetailStatistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_recipe_statistics_white_24dp"
+                android:text="@string/label_statistics" />
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/recipe_second_navigation_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        style="@style/best_meal_floating_action_button"
+        app:backgroundTint="@color/colorAccent"
+        app:srcCompat="@drawable/ic_button_add_white_24dp" />
+
+</android.support.design.widget.CoordinatorLayout>

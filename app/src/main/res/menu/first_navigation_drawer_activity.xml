@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/recipe_list_best"
+            android:icon="@drawable/ic_recipe_best_white_24dp"
+            android:title="@string/label_best"
+            app:itemIconTint="@color/colorWhite" />
+        <item
+            android:id="@+id/recipe_list_all"
+            android:icon="@drawable/ic_recipe_all_white_24dp"
+            android:title="@string/label_all"
+            app:itemIconTint="@color/colorWhite" />
+        <item
+            android:id="@+id/recipe_list_liked"
+            android:icon="@drawable/ic_recipe_like_white_24dp"
+            android:title="@string/label_liked"
+            app:itemIconTint="@color/colorWhite" />
+        <item
+            android:id="@+id/recipe_list_dislike"
+            android:icon="@drawable/ic_recipe_dislike_white_24dp"
+            android:title="@string/label_disliked"
+            app:itemIconTint="@color/colorWhite" />
+
+        <item
+            android:id="@+id/recipe_list_approved"
+            android:icon="@drawable/ic_recipe_approved_white_24dp"
+            android:title="@string/label_approved"
+            app:itemIconTint="@color/colorWhite" />
+
+        <item
+            android:id="@+id/recipe_list_reproved"
+            android:icon="@drawable/ic_recipe_reproved_white_24dp"
+            android:title="@string/label_reproved"
+            app:itemIconTint="@color/colorWhite" />
+
+        <item
+            android:id="@+id/recipe_list_book"
+            android:icon="@drawable/ic_recipe_book_white_24dp"
+            android:title="@string/label_book"
+            app:itemIconTint="@color/colorWhite" />
+
+        <item
+            android:id="@+id/recipe_list_shared"
+            android:icon="@drawable/ic_recipe_share_white_24dp"
+            android:title="@string/label_shared"
+            app:itemIconTint="@color/colorWhite" />
+
+        <item
+            android:id="@+id/recipe_list_printed"
+            android:icon="@drawable/ic_recipe_print_white_24dp"
+            android:title="@string/label_printed"
+            app:itemIconTint="@color/colorWhite" />
+
+        <item
+            android:id="@+id/recipe_list_visualized"
+            android:icon="@drawable/ic_recipe_visibility_white_24dp"
+            android:title="@string/label_visualized"
+            app:itemIconTint="@color/colorWhite" />
+
+        <item
+            android:id="@+id/recipe_list_purchase"
+            android:icon="@drawable/ic_recipe_purchase_list_white_24dp"
+            android:title="@string/label_purchase"
+            app:itemIconTint="@color/colorWhite" />
+
+    </group>
+
+</menu>

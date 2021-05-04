@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    style="@style/best_meal_constraint_layout"
+    android:background="@drawable/screen_gradient_blue"
+    tools:context=".RecipeTool.RecipeToolMaintenanceNutritionalActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        style="@style/best_meal_app_bar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/best_meal_toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imageView_recipePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_description_app_task"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_recipe_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/textView_recipe_name"
+        style="@style/best_meal_first_navigation_textview"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_recipe"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_recipePhoto"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="371dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_insert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_recipePhoto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Calcium"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_calcium"
+                    tools:layout_editor_absoluteY="246dp" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Calcium"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Carbs"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_carbs" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Carbs"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Cholesterol"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_cholesterol" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Cholesterol"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Monounsaturated"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_monounsaturated" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Monounsaturated"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Polyunsaturated"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_polyunsaturated" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Polyunsaturated"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Saturated"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_saturated" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Saturated"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Fat"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_fat" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Fat"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Trans"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_trans" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Trans"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Iron"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_iron" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Iron"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Fiber"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_fiber"
+                    tools:layout_editor_absoluteY="246dp" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Fiber"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Folate"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_folate" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Folate"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Potassium"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_potassium" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Potassium"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Magnesium"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_magnesium" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Magnesium"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Sodium"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_sodium" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Sodium"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Energy"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_energy" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Energy"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Niacin"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_niacin" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Niacin"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Phosphorus"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_phosphorus"
+                    tools:layout_editor_absoluteY="246dp" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Phosphorus"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Protein"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_protein" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Protein"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Riboflavin"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_riboflavin" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Riboflavin"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Sugars"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_sugars" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Sugars"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Thiamin"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_thiamin" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Thiamin"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_E"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_vitamin_e" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Vitamin_E"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_A"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_vitamin_a" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Vitamin_A"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_B12"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_vitamin_b12" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Vitamin_B12"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="TooManyViews">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_B6"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_vitamin_b6" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Vitamin_B6"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_C"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_vitamin_c" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Vitamin_C"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_D"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_vitamin_d" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Vitamin_D"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_K"
+                    style="@style/best_meal_title_short_edit"
+                    android:text="@string/label_vitamin_k" />
+
+                <EditText
+                    android:id="@+id/textViewValue_Vitamin_K"
+                    style="@style/best_meal_value_long_edit"
+                    android:hint="@string/label_enter_text"
+                    android:inputType="text|textCapWords"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/best_meal_progress_bar_lists"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/imageButton_change"
+        style="@style/best_meal_button"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/imageButton_delete"
+        style="@style/best_meal_button"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/imageButton_insert"
+        style="@style/best_meal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_insert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_change"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_delete" />
+
+</android.support.constraint.ConstraintLayout>

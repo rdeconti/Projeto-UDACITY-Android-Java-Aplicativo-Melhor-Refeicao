@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="491dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            style="@style/best_meal_linear_layout_vertical"
+            tools:layout_editor_absoluteY="246dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Calcium"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_calcium"
+                    tools:layout_editor_absoluteY="246dp" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Calcium"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Carbs"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_carbs" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Carbs"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Cholesterol"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_cholesterol" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Cholesterol"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Monounsaturated"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_monounsaturated" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Monounsaturated"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Polyunsaturated"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_polyunsaturated" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Polyunsaturated"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Saturated"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_saturated" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Saturated"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Fat"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_fat" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Fat"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Trans"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_trans" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Trans"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Iron"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_iron" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Iron"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Fiber"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_fiber"
+                    tools:layout_editor_absoluteY="246dp" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Fiber"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Folate"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_folate" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Folate"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Potassium"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_potassium" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Potassium"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Magnesium"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_magnesium" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Magnesium"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Sodium"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_sodium" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Sodium"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Energy"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_energy" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Energy"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Niacin"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_niacin" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Niacin"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Phosphorus"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_phosphorus"
+                    tools:layout_editor_absoluteY="246dp" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Phosphorus"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Protein"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_protein" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Protein"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Riboflavin"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_riboflavin" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Riboflavin"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Sugars"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_sugars" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Sugars"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Thiamin"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_thiamin" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Thiamin"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_E"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_vitamin_e" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Vitamin_E"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_A"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_vitamin_a" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Vitamin_A"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_B12"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_vitamin_b12" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Vitamin_B12"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_B6"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_vitamin_b6" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Vitamin_B6"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_C"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_vitamin_c"
+                    tools:ignore="TooManyViews" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Vitamin_C"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_D"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_vitamin_d" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Vitamin_D"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Vitamin_K"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_vitamin_k" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Vitamin_K"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton_edit"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_description_button_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_recipe_edit_white_24dp" />
+
+</android.support.constraint.ConstraintLayout>

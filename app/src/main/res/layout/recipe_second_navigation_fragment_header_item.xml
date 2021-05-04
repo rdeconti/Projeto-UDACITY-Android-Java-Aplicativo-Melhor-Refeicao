@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_CreatedOn"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_created_on" />
+
+                <TextView
+                    android:id="@+id/textViewValue_CreatedOn"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Diet"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_diet" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Diet"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Type"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_type" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Type"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Cuisine"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_cuisine" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Cuisine"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Intolerance"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_intolerance" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Intolerance"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Occasion"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_occasion" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Occasion"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Servings"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_servings" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Servings"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Price"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_price" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Price"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_Time"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_time" />
+
+                <TextView
+                    android:id="@+id/textViewValue_Time"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle_DifficultLevel"
+                    style="@style/best_meal_title_short"
+                    android:text="@string/label_difficult" />
+
+                <TextView
+                    android:id="@+id/textViewValue_DifficultLevel"
+                    style="@style/best_meal_value_long"
+                    android:text="@string/layout_fake_value_10" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton_edit"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="48dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/content_description_button_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_recipe_edit_white_24dp" />
+
+</android.support.constraint.ConstraintLayout>

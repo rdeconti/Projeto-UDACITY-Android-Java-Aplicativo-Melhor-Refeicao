@@ -1,0 +1,456 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.NoActionBar" />
+
+    <style name="best_meal_textview">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="widget_views" parent="@android:style/Widget">
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="best_meal_constraint_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="best_meal_image_view_app_icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+    </style>
+
+    <style name="best_meal_progress_bar_authorization" parent="android:Widget.ProgressBar.Large">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/best_meal_layout_height</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">384dp</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:progressDrawable">@drawable/progress_bar_custom</item>
+        <item name="android:progressTint">@color/colorAccent</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="best_meal_progress_bar_lists" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/best_meal_layout_height</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginTop">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:progressDrawable">@drawable/progress_bar_custom</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="best_meal_edit_text_email">
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginTop">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+        <item name="android:drawableEnd">@drawable/ic_password_email_white_24dp</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/app_title_normal_size</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="best_meal_button">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+    </style>
+
+    <style name="best_meal_linear_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="best_meal_app_bar_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/best_meal_layout_height</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginTop">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+        <item name="android:theme">@style/AppTheme.AppBarOverlay</item>
+    </style>
+
+    <style name="best_meal_toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="best_meal_navigation_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="best_meal_tab_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorBlack</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="best_meal_app_name_captaincy">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/app_title_medium_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+    <style name="best_meal_app_goal_captaincy">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="best_meal_app_icon_captaincy">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">@string/content_description_app_icon</item>
+        <item name="android:paddingTop">@dimen/nav_header_vertical_spacing</item>
+    </style>
+
+    <style name="best_meal_first_navigation_textview">
+        <item name="android:layout_width">325dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">@dimen/margins</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="best_meal_textview_numbers">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="best_meal_linear_layout_numbers">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginTop">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="best_meal_card_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="best_meal_first_navigation_image_view_recipe_photo">
+        <item name="android:layout_width">276dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_marginTop">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:contentDescription">@string/content_description_app_task</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="best_meal_first_navigation_image_view_selections">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginTop">@dimen/best_meal_margin_default</item>
+        <item name="android:background">@color/colorBlack</item>
+    </style>
+
+    <style name="best_meal_first_navigation_recycler_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/best_meal_layout_height</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginTop">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:longClickable">true</item>
+    </style>
+
+    <style name="best_meal_first_navigation_admob">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="best_meal_floating_action_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+    </style>
+
+    <style name="best_meal_message">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginTop">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="best_meal_textview_recipe_name">
+        <item name="android:layout_width">324dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">@dimen/margins</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="best_meal_textview_recipe_number">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginTop">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="best_meal_title_long">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_margin">@dimen/margins</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="best_meal_title_short">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_margin">@dimen/margins</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="best_meal_title_short_edit">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margins</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="best_meal_value_long">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="best_meal_value_long_edit">
+        <item name="android:layout_width">290dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="best_meal_title_recipe_name">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_margin">@dimen/margins</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="best_meal_ingredient_name_title">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_margin">@dimen/margins</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="best_meal_text_view_ingredient_number">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="best_meal_text_view_recycler_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/best_meal_layout_height</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:longClickable">true</item>
+    </style>
+
+    <style name="best_meal_edittext_password">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:drawableEnd">@drawable/ic_password_white_24dp</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/app_title_normal_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:layout_gravity">top</item>
+    </style>
+
+    <style name="best_meal_linear_layout_buttons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">78dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="best_meal_splash_image_view">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/best_meal_layout_height</item>
+        <item name="android:layout_marginStart">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginTop">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/best_meal_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/best_meal_margin_default</item>
+        <item name="android:background">@drawable/screen_gradient_blue</item>
+        <item name="android:contentDescription">@string/content_description_app_icon</item>
+    </style>
+
+    <style name="best_meal_linear_layout_vertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="best_meal_recipe_tips">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="best_meal_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margins</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

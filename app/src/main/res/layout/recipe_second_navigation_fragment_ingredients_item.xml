@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView_IngredientName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/label_ingredients"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_IngredientNumber"
+        style="@style/best_meal_textview_recipe_number"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/layout_fake_value_10"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/divider11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_IngredientName" />
+
+    <ImageView
+        android:id="@+id/imageView_IngredientPhoto"
+        android:layout_width="231dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_description_ingredient_photo"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_recipe_photo"
+        app:layout_constraintBottom_toTopOf="@+id/divider11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_IngredientAmount"
+        app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+    <ImageView
+        android:id="@+id/imageView_IngredientAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_description_ingredient_amount"
+        app:layout_constraintEnd_toStartOf="@+id/divider10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider9"
+        app:srcCompat="@drawable/ic_recipe_amount_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView_IngredientUnit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_description_ingredient_unit"
+        app:layout_constraintEnd_toStartOf="@+id/divider10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_IngredientAmount"
+        app:srcCompat="@drawable/ic_recipe_unit_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView_IngredientAmount"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/layout_fake_value_10"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_IngredientPhoto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/divider10"
+        app:layout_constraintTop_toTopOf="@+id/divider9" />
+
+    <TextView
+        android:id="@+id/textView_IngredientUnit"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/layout_fake_value_10"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_IngredientPhoto"
+        app:layout_constraintStart_toEndOf="@+id/divider10"
+        app:layout_constraintTop_toBottomOf="@+id/textView_IngredientAmount" />
+
+    <ImageButton
+        android:id="@+id/imageButton_edit"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/content_description_button_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/divider11"
+        app:layout_constraintEnd_toStartOf="@+id/divider10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_IngredientUnit"
+        app:srcCompat="@drawable/ic_recipe_edit_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_purchaseList"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/content_description_purchase_list_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/divider11"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_IngredientPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/textView_IngredientUnit"
+        app:layout_constraintVertical_bias="0.625"
+        app:srcCompat="@drawable/ic_recipe_purchase_list_white_24dp" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="7dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_IngredientAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_IngredientName" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="6dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/divider11"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_IngredientPhoto"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_edit"
+        app:layout_constraintTop_toTopOf="@+id/divider9" />
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_IngredientPhoto" />
+
+</android.support.constraint.ConstraintLayout>
